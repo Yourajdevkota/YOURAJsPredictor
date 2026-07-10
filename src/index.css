@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-bg: #090909;
+  --color-brand-surface: #161616;
+  --color-brand-primary: #00BFFF;
+  --color-brand-secondary: #00E676;
+  --color-brand-highlight: #7C4DFF;
+}
+
+/* Custom glow animations and utilities */
+@layer utilities {
+  .glow-primary {
+    text-shadow: 0 0 10px rgba(0, 191, 255, 0.6), 0 0 20px rgba(0, 191, 255, 0.3);
+  }
+  .glow-secondary {
+    text-shadow: 0 0 10px rgba(0, 230, 118, 0.6), 0 0 20px rgba(0, 230, 118, 0.3);
+  }
+  .glow-highlight {
+    text-shadow: 0 0 10px rgba(124, 77, 255, 0.6), 0 0 20px rgba(124, 77, 255, 0.3);
+  }
+  
+  .glow-border-primary {
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.2), inset 0 0 15px rgba(0, 191, 255, 0.1);
+  }
+  
+  .glow-border-secondary {
+    box-shadow: 0 0 15px rgba(0, 230, 118, 0.2), inset 0 0 15px rgba(0, 230, 118, 0.1);
+  }
+
+  .glow-border-highlight {
+    box-shadow: 0 0 15px rgba(124, 77, 255, 0.2), inset 0 0 15px rgba(124, 77, 255, 0.1);
+  }
+  
+  .glass-card {
+    background: rgba(22, 22, 22, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .glass-card-hover {
+    transition: all 0.3s ease;
+  }
+  .glass-card-hover:hover {
+    background: rgba(22, 22, 22, 0.85);
+    border-color: rgba(0, 191, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(0, 191, 255, 0.1);
+  }
+}
+
+/* Hide scrollbars but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Rolling animation helper keyframes */
+@keyframes countUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
