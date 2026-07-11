@@ -227,7 +227,7 @@ export default function ProfileScreen() {
             <div>
               <span className="text-xs font-bold text-white block">Contact Support</span>
               <span className="text-[10px] text-gray-400 font-sans leading-tight block mt-0.5">
-                Complain, ask for help, or message the provider on WhatsApp <strong className="text-[#00E676]">9716230013</strong>
+                Complain, ask for help, or message the provider on WhatsApp <strong className="text-[#00E676]">9705277321</strong>
               </span>
             </div>
           </div>
