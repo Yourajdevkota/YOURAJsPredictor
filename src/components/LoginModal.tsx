@@ -18,7 +18,7 @@ export default function LoginModal({ onClose, onLoginSuccess, defaultPlatform = 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  const developerPhone = '9716230013';
+  const developerPhone = '9779705277321';
 
   const getThemeConfig = () => {
     switch (platform) {
