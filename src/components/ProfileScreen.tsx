@@ -214,7 +214,7 @@ export default function ProfileScreen() {
 
         {/* Support Support Section */}
         <a
-          href="https://wa.me/9716230013"
+          href="https://wa.me/9779705277321"
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => { audio.playClick(); }}
